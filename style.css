@@ -1,0 +1,470 @@
+body{
+  background-color:black;
+  font-style:arial;
+  margin:0;
+}
+header{
+    background-color:#121212;
+    padding:15px;
+    justify-content:space-evenly;
+    height:70px;
+    align-items:center;
+}
+.logo{
+  width: 80px; /* adjust size */
+  height: auto;
+}
+.logo-area{
+  display: flex;
+  align-items:center;             /* keep both in one line */       /* vertically center them */
+  gap: 10px;  
+}
+.Spotify-logo{
+    background-image:url(".vscode/JavaScript/clone/spotify-logo-spotify-logo-transparent-spotify-icon-transparent-free-free-png.webp");
+    background-size:cover;
+    height:50px;
+    width:100%;
+}
+.add-icon{
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    border:10px solid black;
+    border-radius:50%;
+    display:flex;
+    margin-left:400px;
+}
+.search-bar{
+    display:flex;
+    align-items:center;
+    background-color:#242424;
+    border-radius:25px;
+    padding:8px 15px;
+    width:400px;
+    margin-left:300px;
+    gap:10px;
+    
+    
+}
+.search-bar i{
+    color:white;
+    margin-left:10px;
+    font-size:18px;
+
+}
+.search-bar input{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+}
+.search{
+  background-color: white;
+  color: black;;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  width:110px;
+  height:20px;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  margin-right:25px;
+  margin-left:400px;
+}
+p{
+  font-size: 15px;
+  font-weight: bold;
+}
+p:hover{
+    color:black;
+    cursor:pointer;
+}
+.bell{
+   font-size: 24px;            /* size of the bell */
+   color: white; 
+   cursor:pointer;              /* icon color (inside) */    /* white circular border */
+}
+.user{
+   font-size: 25px;            /* size of the bell */
+   color: white; 
+   cursor:pointer; 
+}
+.sidebar{
+  width:300px;
+  height:790px;
+  display:flex;
+  background-color:#242424;
+  padding:15px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  flex:0 0 250px;
+  top:10px;
+  border-radius:8px;
+}
+.library{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:white;
+  margin-top:0;
+  font-size:9px;
+}
+.library i{
+  font-size:12px;
+}
+
+.sidebar-nv{
+  font-size:10px;
+  margin-left:40px;
+  background-color: black;
+  color:white;
+  width:90px;
+  height:20px;
+  padding: 6px 15px;
+  border-radius: 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  margin-top:5px;
+}
+.mini{
+  color:black;
+  font-size:20px;
+  margin-left:30px;
+  margin-top:10px;
+}
+.mini-navbar {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.right-sidebar{
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  flex-direction:column;
+  min-width:800px;
+  height:800px;
+  background-color:#121212;
+  border-radius:8px;
+  overflow:hidden;
+  gap:10px;
+  padding:10px;
+}
+.right-sidebar a {
+  display: inline-block;
+  height: 40px;
+  width: 50px;
+  border-radius: 50%;
+  padding:0 10px;
+  background-color: grey;
+  margin:0;
+}
+.top-links {
+  display: flex;        /* a tags ek line me rahenge */
+  gap: 10px;            /* thoda gap between them */
+  align-items: center;  /* vertically centered */
+}
+
+
+.right-sidebar a:hover {
+  background-color: white;;   /* Spotify-style green hover */
+}
+
+.right-sidebar a.active {
+  background-color:grey;
+  color: black;
+  margin-top:20px;
+  height:32px;
+  margin-left:20px;
+  width:20px;
+  border-radius:45%;
+  text-align:center;
+}
+.right-sidebar a.active1 {
+  background-color:grey;
+  color: black;
+  margin-top:20px;
+  height:30px;
+  margin-left:10px;
+  width:48px;
+  border-radius:40%;
+  text-align:center;
+}
+.right-sidebar a.active2 {
+  background-color:grey;
+  color:black;
+  margin-top:20px;
+  height:30px;
+  margin-left:10px;
+  width:60px;
+  border-radius:32%;
+}
+.main-content {
+  display: flex;
+  align-items: flex-start; /* keeps both at top level */
+  gap: 20px;                /* space between left and right sections */
+  padding: 20px;
+  background-color: black;
+}
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  align-items:flex-start;
+  justify-content:flex-start;
+  width:900px;
+  height:140px;
+  background-color:#121212;
+  margin-top:2px;
+  padding:12px 10px;
+
+}
+.small-box{
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  cursor:pointer;
+
+}
+.small-box span{
+  font-size:20px;
+}
+.small-box i{
+  font-size:28px;
+  padding:8px;
+  background-color:rgb(70, 70, 156);
+}
+.small-box1{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+
+}
+.box-img{ 
+  width:40px;         
+  height:40px;   
+  object-fit: cover;
+}
+.small-box2{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.box-img1{
+  width:40px;         
+  height:40px;   
+  object-fit: cover;
+}
+.small-box3{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.box-img2{
+  width:40px;         
+  height:40px;   
+  object-fit: cover;
+}
+.small-box4{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.box-img3{
+  width:40px;         
+  height:40px;
+  object-fit:cover;   
+}
+.small-box5{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.box-img4{
+  width:40px;         
+  height:40px;
+  object-fit:cover;   
+}
+.small-box5{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.box-img4{
+  width:40px;         
+  height:40px;
+  object-fit:cover;   
+}
+.small-box6{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.box-img5{
+  width:40px;         
+  height:40px;
+  object-fit:cover;   
+}
+.small-box7{
+  gap:10px;
+  color:#fff;
+  width:190px;
+  height:40px;
+  background-color:#4d4949;
+  padding:4px 5px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.box-img6{
+  width:40px;         
+  height:40px;
+  object-fit:cover;   
+}
+.spotifyplaylist{
+  padding:15px 2px;
+}
+.head{
+  width:790px;
+  height:65px;
+  background-color:#121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.made{
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+.made p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.made .username {
+  font-size: 19px;   /* niche wala text thoda chhota */
+  color: #b3b3b3;    /* halka gray color Spotify style */
+}  
+.huge{
+  color:white;
+  display:flex;
+  align-items:center;
+}
+.playlist-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.playlist {
+  width: 150px;
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.playlist:hover {
+  background-color: #282828;
+  transform: scale(1.05);
+}
+
+/* Playlist cover image */
+.playlist img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Playlist name text */
+.playlist p {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.playlist:hover p {
+  color: #1db954; /* Spotify green text on hover */
+}
+.ply-btn {
+  position: absolute;
+  bottom: 60px; /* places over image */
+  right: 15px;
+  background-color: #1db954;
+  border-radius: 60%;
+  padding: 10px;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ply-btn i {
+  color: #000;
+  font-size: 16px;
+}
+
+/* Hover effect: show button */
+.playlist:hover .ply-btn{
+  opacity:1;
+  transform:translate(-5px);
+}
